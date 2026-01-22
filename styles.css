@@ -235,6 +235,70 @@ footer {
     text-shadow: 0 0 15px #AAAAAA50;
 }
 
+/* ===== MÓVIL / RESPONSIVE ===== */
+@media (max-width: 600px) {
+  /* Ajuste del grid */
+  .capitulos {
+    grid-template-columns: 1fr; /* una columna */
+    gap: 1rem; /* menos espacio entre tarjetas */
+    padding: 0 0.5rem;
+  }
+
+  /* Tarjetas más pequeñas */
+  .capitulo-card {
+    max-width: 100%;
+  }
+
+  /* Imágenes más compactas */
+  .capitulo-card img {
+    height: 120px; /* menor altura */
+  }
+
+  /* Contenido interno */
+  .capitulo-card .content {
+    padding: 0.8rem;
+  }
+
+  /* Tipografía más pequeña */
+  .capitulo-card h3 {
+    font-size: 0.85rem;
+  }
+
+  .capitulo-card p {
+    font-size: 0.75rem;
+  }
+
+  /* Hero más compacto */
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero .cta-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  /* Header y nav */
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
